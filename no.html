@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://img.freepik.com/free-vector/gradient-valentine-s-day-background_23-2149242406.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff4d6d;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .response-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 0 10px;
+            background-color: #ff4d6d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ff3366;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="https://i.pinimg.com/originals/ef/d9/50/efd950ef45ae1023e5bfc02add995590.gif" alt="Image" />
+        <!-- Change URL to your image -->
+        <h1>Are You Sure????</h1>
+
+
+        <div class="response-buttons">
+            <button onclick="sayYes()">Yes</button>
+            <button id="noButton" onclick="sayNo()">No</button>
+        </div>
+        <p id="response" style="display: none;"></p>
+        <p id="promptMessage" style="display: none;">You must say yes!</p>
+    </div>
+
+    <script>
+        function sayYes() {
+            var message = document.getElementById("response");
+            message.textContent = "WIIIII HEHEHEH I LOVE YOU";
+            message.style.display = "block";
+        }
+
+        function sayYes() {
+            var noButton = document.getElementById("noButton");
+            var promptMessage = document.getElementById("promptMessage");
+            noButton.style.display = "none";
+            promptMessage.style.display = "block";
+            location.href = 'po.html';
+
+
+        }
+
+        function sayNo() {
+            location.href = 'yes.html';
+        }
+    </script>
+
+</body>
+
+</html>
